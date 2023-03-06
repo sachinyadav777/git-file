@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            display: grid;
+            /* justify-content: center; */
+            /* grid-gap: 10%; */
+
+            /* grid-template-columns: repeat(1,1fr); */
+        }
+
+        .container {
+            background-color: aqua;
+            padding: 10px;
+            /* margin: 25% auto; */
+        }
+
+        input {
+            width: 100%;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the best form on earth</h1>
+        <form action="" name="myform" onsubmit="return validform()">
+            <div class="formdesign" id="name">
+                Name: <input type="text" name="fname"><b><span class="span" id="nameid"></span></b>
+            </div>
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail"><b><span class="span" id="emailid"></span></b>
+            </div>
+            <div class="formdesign" id="phone">
+                phone: <input type="phone" name="fphone"><b><span class="span" id="phoneid"></span></b>
+            </div>
+            <div class="formdesign" id="password">
+                Password: <input type="password" name="fpassword"><b><span class="span" id="passwordid"></span></b>
+            </div>
+
+            <div class="formdesign" id="cpassword">
+                confirm password: <input type="password" name="fconfirmpassword"><span class="span"
+                    id="confirmpasswordid"><b></span></b>
+            </div>
+            <div><input class="button" type="submit" value="submit"></div>
+
+        </form>
+    </div>
+</body>
+<script>
+    function clear() {
+        error = document.getElementsByClassName("span")
+        for (let items of error) {
+            items.innerHTML = ""
+        }
+    }
+    function seterror(id, error) {
+        element = document.getElementById(id)
+        element.getElementsByClassName("span")[0].innerHTML = error;
+
+    }
+    function validform() {
+        clear();
+        var returnvalue = true
+        var name = document.forms["myform"]["fname"].value;
+        if (name.length < 5 || name.length == 0) {
+            seterror("name", "*this is unvailid")
+            returnvalue = false
+        }
+         var name = document.forms["myform"]["fphone"].value;
+         if (name.length < 1 || name.length > 10 || isNaN(name)) {
+             seterror("phone", "*this is unvailid")
+             returnvalue = false
+         }
+          var name = document.forms["myform"]["femail"].value;
+          if ( name.length > 25 || name.length == 0) {
+              seterror("email", "*this is unvailid")
+              returnvalue = false
+          }
+          var name = document.forms["myform"]["fpassword"].value;
+          if (name.length == 0) {
+              seterror("password", "*this is unvailid")
+              returnvalue = false
+          }
+          var name = document.forms["myform"]["fconfirmpassword"].value;
+          if (name.length == 0) {
+              seterror("cpassword", "*this is unvailid")
+              returnvalue = false
+          }
+        // console.log(document.forms["myform"]["fconfirmpassword"].value)
+        return returnvalue;
+    }
+
+
+
+</script>
+
+</html>
