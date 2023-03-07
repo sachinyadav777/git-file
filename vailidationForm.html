@@ -22,30 +22,33 @@
         }
 
         form {
-            display: grid;
-            /* justify-content: center; */
-            /* grid-gap: 10%; */
-
-            /* grid-template-columns: repeat(1,1fr); */
-        }
-
-        .container {
             background-color: aqua;
-            padding: 10px;
-            /* margin: 25% auto; */
+            padding: 5%;
+            border-radius: 10px;
         }
 
         input {
             width: 100%;
-            padding-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #password{
+
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #4343be;
+            color: #FFF;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to the best form on earth</h1>
         <form action="" name="myform" onsubmit="return validform()">
+            
+        <h1>Welcome to the best form on earth</h1>
             <div class="formdesign" id="name">
                 Name: <input type="text" name="fname"><b><span class="span" id="nameid"></span></b>
             </div>
@@ -63,10 +66,10 @@
                 confirm password: <input type="password" name="fconfirmpassword"><span class="span"
                     id="confirmpasswordid"><b></span></b>
             </div>
-            <div><input class="button" type="submit" value="submit"></div>
+            <!-- <div><input class="button" type="submit" value="submit"></div> -->
+            <button type="submit">Submit</button>
 
         </form>
-    </div>
 </body>
 <script>
     function clear() {
@@ -84,7 +87,7 @@
         clear();
         var returnvalue = true
         var name = document.forms["myform"]["fname"].value;
-        if (name.length < 5 || name.length == 0) {
+        if (name.length < 5 || name.length == 0 || !isNaN(name)) {
             seterror("name", "*this is unvailid")
             returnvalue = false
         }
