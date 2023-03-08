@@ -1,0 +1,82 @@
+ /* header start.... */
+ .header {
+    /* display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    /* background-color: transparent; */
+    padding: 1% 5%;
+    font-family: "Open Sans", sans-serif;
+    position: fixed;
+    top: 0%;
+    z-index: 100000;
+    width: 100%;
+}
+ .shadow{
+     /* background-color: #fff;
+    box-shadow: 0px 0px 36px 0px #adadad; */
+    transition: all 0.5s;
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    background-color: var(--white);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    margin-right: 34px;
+   color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+nav ul li a:hover {
+    color: #ed1575;
+}
+nav ul button:hover {
+    background-color: #ed1575;
+}
+
+.logo>img {
+    height: 64px;
+}
+
+.button {
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    transition: all 0.5s ease;
+    /* border: none; */
+    outline: none;
+    /* background: none; */
+    /* background-color: var(--pink); */
+}
+.fa-phone{
+    margin-right: 8px;
+}
+.sticky{
+    background-color: #FFF;
+   
+}
+.sticky nav ul li a{
+     color: #2B2350;
+}
+.sticky nav ul li a:hover {
+color: #ed1575;
+}
+.sticky nav ul button{
+    /* color: #2B2350; */
+     background-color: #ed1575;
+}
+/* header end...... */

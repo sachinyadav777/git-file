@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+
+        .bx {
+            font-size: 40px;
+            color: #ed1575;
+        }
+
+        /* section 4 start.... */
+        #myVideo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .landing-section{
+            position: relative;
+    height: 660px;
+    overflow: hidden;
+        }
+        
+        .dark-color{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #00000099;
+        }
+        /* section start */
+        .vedio-container{
+            position: absolute;
+            display: grid;
+            grid-template-columns:48% 1fr;
+            margin-top: 40px;
+            padding: 0 5%;
+            grid-gap: 6%;
+            top: 20%;
+        }
+.video-page{
+    display: grid;
+    place-items: center;
+}
+.video-page video{
+    width: 100%;
+}
+.page h2{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.page h1{
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 800;
+}
+.page p{
+    margin: 5% 0;
+    color: #FFF;
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    word-spacing: 0.9px;
+}
+.page-button{
+    margin: 5px;
+    padding: 9px 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #ed1575;
+    border: none;
+    color: white;
+}
+.page-button i, .page-button a{
+    color: #FFF;
+    font-size: 18px;
+}
+.page-button i{
+    margin-right: 6px;
+}
+.video-page video{
+    border: 10px solid #ed1575;
+    display: block;
+    /* display: grid; */
+    /* place-items: center; */
+    /* hell i am doing */
+}
+
+        
+    </style>
+</head>
+
+<body>
+     <header class="header shadow scroll" id="hed">
+        <div class="logo"><img src="new-logo.png" alt="error" class="img"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <button class="button"> <i class="fa fa-phone"></i>CONNECT US </button>
+            </ul>
+        </nav>
+    </header>
+    <section class="landing-section">
+       
+     <video autoplay muted loop id="myVideo">
+            <source src="banner-video.mp4" type="video/mp4">
+        </video>
+       <div class="dark-color"></div>
+<div class="vedio-container">
+    <div class="page">
+       
+        <h2>Hire Coworker / Virtual Assistant</h2>
+         <h1>Life Is Better With
+        A Virtual Assistant</h1>
+        <p>A virtual assistant is an independent contractor that performs administrative support services for clients away from the client's office. Although virtual assistant frequently works from anywhere, they have remote access to the necessary planning resources.</p>
+        <!-- <div class=""> -->
+           <button class="request page-button"><a href="#" target="_blank" ><i class='bx bx-user'></i>REQUEST SERVICE</a></button>
+           <button class="call page-button"><a href="#" target="_blank" ><i class='bx bx-phone-call'></i>CALL US</a></button>
+        <!-- </div> -->
+    </div>
+    <div class="video-page">
+        <video autoplay muted controls loop id="vid2"><source src="landing-vid.mp4" type="video/mp4"></video>
+    </div>
+</div>
+    </section>
+    
+    <!-- main start -->
+    <main>
+       
+        <section class="section1">
+            <div class="top">
+                <p>SERVICES</p>
+            </div>
+            <div class="s4">
+                <h1>WHAT WE OFFER TO YOU</h1>
+            </div>
+            <div class="section1-box">
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bxl-chrome.png"> -->
+                    <i class='bx bxl-chrome'></i>
+                    <h2>IT OUTSOURCING SERVICES</h2>
+                    <p>It's important to choose the greatest IT outsourcing company. It makes sure that it benefits
+                        your...</p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bx-qr.png"> -->
+                    <i class='bx bx-qr'></i>
+                    <h2>CONTENT WRITER</h2>
+                    <p>Hire highly talented content writers with HireCoworker. Expand your digital footprint with...</p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bxs-share-alt.png"> -->
+                    <i class='bx bxs-share-alt'></i>
+                    <h2>DIGITAL MARKETING EXPERT</h2>
+                    <p>We have a group of in-house creative professionals. We are capable of handling any size...</p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bxs-business.png"> -->
+                    <!-- <img class="img" src="bxs-business.png"> -->
+                    <i class='bx bxs-business'></i>
+
+                    <h2>ENGINEERS AND ARCHITECTS</h2>
+                    <p>Engineers and Architects work with clients to design, plan and oversee construction projects...
+                    </p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bx-crop.png"> -->
+                    <i class='bx bx-crop'></i>
+                    <h2>HIRE DEDICATED DESIGNERS</h2>
+                    <p>Using our graphic design services will help you realize your marketing concepts. The only...</p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+                <div class="s1-inner">
+                    <!-- <img class="img" src="bxs-credit-card.png"> -->
+                    <i class='bx bxs-credit-card'></i>
+                    <h2>FINANCE & ACCOUNTS EXPERTS</h2>
+                    <p>Finance and Accounts Experts assist clients with financial planning, analysis, and...</p>
+                    <a class="know-more" href="#">Know More</a>
+                </div>
+            </div>
+            <button class="s2-button"> View More</button>
+        </section>
+        <section class="section2">
+            <div class="top">
+                <p>PRICING</p>
+            </div>
+            <div class="s4">
+                <h1>OUR PRICING STARTS FROM</h1>
+            </div>
+            <div class="section-2-box">
+                <div class="s2-inner">
+                    <h2>IT OUTSOURCING SERVICES</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>EMBEDDED DEVELOPMENT</h2>
+                    <p>Starting just at</p>
+                    <h3>$5 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>DIGITAL MARKETING</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>ENGINEERS AND ARCHITECTURE</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>HIRE DEDICATED DESIGNERS</h2>
+                    <p>Starting just at</p>
+                    <h3>$5 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>HIRE DEVELOPERS</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>FINANCE & ACCOUNTS EXPERTS</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+                <div class="s2-inner">
+                    <h2>MOBILE APP DEVELOPERS</h2>
+                    <p>Starting just at</p>
+                    <h3>$6 / HOUR</h3>
+                </div>
+            </div>
+            <button class="s2-button">More Pricing</button>
+        </section>
+        <!-- section 3 start -->
+        <section class="section3">
+            <div class="s4-box1">
+                <div class="s3">
+                    <p>COLLABRATION WITH US</p>
+                </div>
+                <div class="s4">
+                    <h1>Why Hire<span>Co-Woker</span>?</h1>
+                </div>
+                <div class="s4">
+                    <p>We have offered a variety of services to customers across different industries. SEO, PPC ads,
+                        Amazon shop optimization, copywriting, CRO, and other services are all included in our digital
+                        marketing offerings.</p>
+                </div>
+                <div class="cheackbox">
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>Handling 10 million visitors for various web accounts</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>100% money-back guarantee</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>350+ certified digital marketing experts</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>Multi-domain skill support</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>Continuous training to the team</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>Google, Bing and SEMrush certified professionals</p>
+                    </div>
+                    <div class="cheack">
+                        <img src="bxs-check-shield.png" alt="error">
+                        <p>Professional support by Copywriters</p>
+                    </div>
+                </div>
+            </div>
+            <div><img class="box-img" src="Business decisions-broo.png"></div>
+
+        </section>
+        <!-- section 3 end -->
+        <section class="section4">
+            <div class="top">
+                <p>HIRE COWORKER</p>
+            </div>
+            <div class="s4">
+                <h1>ABOUT HIRECOWORKER</h1>
+            </div>
+            <div class="s4 align">
+                <p>Hire Coworker is an entirely managed service experience that provides clients with a dedicated
+                    assistant, a customer success manager, a surrounding team for support, and industry-first virtual
+                    assistant management software to task management, streamline communication, file sharing, and team
+                    collaboration.
+                </p>
+            </div>
+            <div class="section-4-box s4">
+                <div><img class="section-4-img" src="dedicated-designers-1.jpg" alt="error"></div>
+                <div>
+                    <div class="h4">
+                        <span></span>
+                        <h4>HIRE COWORKER IS CHANGING THE WAY OF BUSINESSES.</h4>
+                    </div>
+                    <div class="s4"><i class="fa fa-check-circle"></i>Expertise in innovations</div>
+                    <div class="s4"><i class="fa fa-check-circle"></i>9+ years of rich experience</div>
+                    <div class="s4"><i class="fa fa-check-circle"></i>9/10 client satisfaction score</div>
+                    <div class="s4">
+                        <p>For a low hourly fixed price, you’re getting a dedicated Virtual Assistant (VA) to work on as
+                            much as you’d like, just like having an in-office team member who is available to take work
+                            for you whenever you need any help. Starting in least of $5/hour, you will get a truly
+                            unlimited VA.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section 4 end..... -->
+        <!-- <section 5 start.... -->
+        <section class="section5">
+            <div class="top">
+                <p>PROCESS</p>
+            </div>
+            <div class="s4">
+                <h1>HOW IT WORKS</h1>
+            </div>
+            <div class="s5-box">
+                <div class="img-div"><img class="s5-img" src="contact-us-3.png"></div>
+                <div class="s5-card">
+                    <h2>Contact us</h2>
+                    <p>
+                        Your work can be started with a single easiest step just by contacting us through our form or
+                        directly by calling us at our contact No. +1 (848) 200-0555
+                    </p>
+                    <button class="s5-button">KNOW MORE</button>
+                </div>
+            </div>
+            <div class="s5-box">
+                <div class="s5-card">
+                    <h2>Get Started</h2>
+                    <p>Your work is almost done at the first step itself; you just need to relax. Now your business is
+                        our top priority, and we'll take care of everything.</p>
+                    <button class="s5-button">KNOW MORE</button>
+                </div>
+                <div class="img-div"><img class="s5-img" src="get-started.png"></div>
+            </div>
+            <div class="s5-box">
+                <div class="img-div"><img class="s5-img" src="feedback.png"></div>
+                <div class="s5-card">
+                    <h2>Provide Feedback</h2>
+                    <p>Once your work is done from our side, you just need to provide your valuable feedback to us. So
+                        that the next time we can provide even better service and help your business grow tenfold.</p>
+                    <button class="s5-button">KNOW MORE</button>
+                </div>
+            </div>
+        </section>
+        <!-- form start.... -->
+        <div class="container">
+            <div class="form">
+                <h2>FEEL FREE TO CONNECT US</h2>
+                <div class="form-box">
+                    <p>Name</p>
+                    <input type="text" placeholder="please enter your name">
+                </div>
+                <div class="colum">
+                    <div class="form-box">
+                        <p>Email</p>
+                        <input type="text" placeholder="please enter your mail">
+                    </div>
+                    <div class="form-box">
+                        <p>Mobile</p>
+                        <input type="text" placeholder="mobile">
+                    </div>
+                </div>
+                <div class="form-box">
+                    <p>Message</p>
+                    <textarea class="erea"></textarea>
+                </div>
+                <button class="s2-button">Submit</button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class=" first-box">
+                <div class="max box1 border">
+                    <div class="logo2"><i class="fa fa-map-marker"></i></div>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Silverton Texas USA-79257</p>
+                    </div>
+                </div>
+                <div class="max box2 border">
+                    <div class="logo2"><i class="material-icons">mail</i></div>
+                    <div>
+                        <h3>Mail Us</h3>
+                        <p>info@hirecoworker.com</p>
+                    </div>
+                </div>
+
+                <div class="max box3">
+                    <div class="logo2"><i class="fa fa-phone"></i></div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>
+                            +1 (848) 200-0555</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-box">
+                <div class="discription">
+                    <h4>Hire Coworker</h4>
+                    <p>Hire Coworker provides the best virtual employee for all of your needs. We have been in business
+                        for over 9 years and have thousands of satisfied clients in a variety of fields.</p>
+                </div>
+                <div class="discription">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <a href="#" alt="error">
+                            <li>about</li>
+                        </a>
+                        <a href="#" alt="error">
+                            <li>pricing</li>
+                        </a>
+                        <a href="#" alt="error">
+                            <li>services</li>
+                        </a>
+                        <a href="#" alt="error">
+                            <li>Call Us</li>
+                        </a>
+
+                        <a href="#" alt="error">
+                            <li>contact</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="discription">
+                    <h4>Our Successful Works</h4>
+                    <ul>
+                        <a href="#">
+                            <li>Coworker</li>
+                        </a>
+                        <a href="#">
+                            <li>Pk Solutions</li>
+                        </a>
+                        <a href="#">
+                            <li>Flempeg Solutions</li>
+                        </a>
+                        <a href="#">
+                            <li>Rapid Auto Shipping</li>
+                        </a>
+                        <a href="#">
+                            <li>More Works</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="discription">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <a href="#">
+                            <li>Hire Content Writer</li>
+                        </a>
+                        <a href="#">
+                            <li>Hire Virtual Assistant</li>
+                        </a>
+                        <a href="#">
+                            <li>Hire Dedicated Designer</li>
+                        </a>
+                        <a href="#">
+                            <li>Hire Deidcated Developer</li>
+                        </a>
+                        <a href="#">
+                            <li>Hire Digital Marketing Expert</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="inner-link">
+                <div class="mic">
+                    <p>Follow Us at:</p>
+                </div>
+                <div class="link">
+                    <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" class="img"> </a>
+                </div>
+                <div><a href="#" target="_blank"><img class="img" src="linkedin-icon.png"></a></div>
+                <div><a href="#" target="_blank"><img class="img" src="instagram-icon.png"></a></div>
+                <div><a href="#" target="_blank"><img class="img" src="twitter-icon.png"></a></div>
+                <div><a href="#" target="_blank"><img class="img" src=""></a></div>
+            </div>
+            <div>
+                <p>Copyright © 2018- 2023, HireCoWorker- All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script> 
+    window.addEventListener('scroll',function(){
+        let scroll =  document.getElementsByClassName("scroll")[0]
+        // let croll =  document.getElementsByClassName("scroll")[1]
+        if(window.pageYOffset > 0){
+           scroll.classList.add("sticky");
+        //    croll.classList.add("sticky");
+        }else{
+            scroll.classList.remove("sticky")
+            // croll.classList.remove("sticky")
+        }
+    });
+    // window.addEventListener('scroll',()=>{
+    //     let croll = document.getElementsByTagName("nav")[0]
+    //     if(window.pageYOffset > 0){
+    //         croll.classList.add("croll");
+    //     }else{
+    //         croll.classList.remove("croll")
+    //     }
+    // })
+//         window.onscroll = function() {scrollFunction()};
+//         function scrollFunction() {
+//   if ( document.documentElement.scrollIntoView > 50) {
+    
+//   }
+// }
+//     </script>
+</body>
+
+</html>
