@@ -133,6 +133,7 @@
                 <button class="button"> <i class="fa fa-phone"></i>CONNECT US </button>
             </ul>
         </nav>
+        <i class='bx bx-menu menu'></i>
     </header>
     <section class="landing-section">
        
@@ -558,7 +559,12 @@
     
 //   }
 // }
-//     </script>
+let a = document.getElementsByClassName("menu")[0]
+a.addEventListener("click", function(){
+   let b = document.getElementsByClassName("nav")[0]
+   b.classList.toggle("run")
+})
+   </script>
 </body>
 
 </html>

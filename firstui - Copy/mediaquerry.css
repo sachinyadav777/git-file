@@ -55,6 +55,16 @@
     .page h1{
         font-size: 30px;
     }
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .run{
+        display: block;
+    }
+    
 
 }
 @media screen and (max-width: 620px) {
