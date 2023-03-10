@@ -107,6 +107,7 @@ display: grid;
 grid-template-columns: repeat(4,1fr);
 gap: 5%;
 padding: 5% 0 0 0;
+margin-bottom: 5%;
 }
 .s2-button{
 /* 
@@ -118,7 +119,7 @@ background-color: #ed1575;
 border-radius: 9px;
 border-style: none; */
 font-size: 16px;
-margin: 95px 0 0 0;
+/* margin: 95px 0 0 0; */
     font-weight: 500;
     padding: 10px 20px;
     outline: none;
@@ -174,8 +175,9 @@ padding: 5% 8%;
 display: grid;
 grid-template-columns: repeat(3,1fr);
 /* gap: 5%; */
-grid-row-gap: 11%;
-grid-column-gap: 4%;
+row-gap: 11%;
+column-gap: 4%;
+margin-bottom: 10%;
 }
 .s1-inner{
 background-color: #FFF;
