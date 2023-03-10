@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+        }
+
+        #iz {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            color: white;
+        }
+
+        
+        .menu{
+            display: none;
+        }
+        .active_menu{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <i class='bx bx-menu mic' id="fa"></i>
+    <div class="menu" id="menu">
+        <div class="" id="iz">
+            <a id="max" href="#">home</a>
+            <a id="max" href="#">about</a>
+            <a id="max" href="#">contact</a>
+        </div>
+    </div>
+</body>
+<script>
+    let a = document.getElementsByClassName("mic")[0]
+    a.addEventListener("click", function () {
+        let b = document.getElementById("menu")
+        b.classList.toggle("active_menu")
+        
+    })
+//     document.getElementById("fa").addEventListener("click", function () {
+//      document.getElementById("iz").style.display="block"
+//  })
+</script>
+
+</html>

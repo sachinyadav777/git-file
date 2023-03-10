@@ -6,7 +6,8 @@
         font-size: 15px;
     }
     .vedio-container{
-        grid-template-columns: 45% 1fr;
+        grid-template-columns: 52% 1fr;
+        grid-gap: 3%;
     }
 }
 @media screen and (max-width: 837px) {
@@ -51,9 +52,10 @@
     .second-box{
         grid-template-columns: repeat(2,1fr);
     }
-.vedio-container{
-    grid-template-columns: repeat(1,1fr);
-}
+    .page h1{
+        font-size: 30px;
+    }
+
 }
 @media screen and (max-width: 620px) {
     .section1-box,.section-2-box{
@@ -78,6 +80,27 @@
     .section3 .s4-box1 .s4 span{
         font-size: 35px;
     }
+    .vedio-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 0%;
+        /* margin: 10px 0; */
+    }
+    .page p{
+        margin: 1% 0;
+    }
+    .page h1{
+        font-size: 25px;
+    }
+    .container{
+        padding: 5% 8%;
+    }
+    .colum{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .form h2{
+        font-size: 30px;
+    }
+
 }
 @media screen and (max-width: 505px) {
     .section2 button, .section1 button{
@@ -96,7 +119,18 @@
     .border{
         border: none;
     }
+    .cheack p{
+        font-size: 12px;
+    }
+    .end{
+        grid-template-columns: repeat(1,1fr);
+    }
 
+}
+@media screen and (max-width: 420px) {
+    .form h2{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 1200px){
     .landing-section > #myVideo{
