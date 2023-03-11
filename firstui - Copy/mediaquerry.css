@@ -5,7 +5,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
     .page h1 {
         font-size: 35px;
     }
@@ -113,7 +113,7 @@
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media (max-width: 620px) {
     .vedio-container {
         grid-template-columns: 1fr;
         grid-gap: 0%;
