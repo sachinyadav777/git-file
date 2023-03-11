@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="mediaquerry.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="header.css" rel="stylesheet">
-    <link href="footer.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    <link href="mediaquerry.css" rel="stylesheet">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500&display=swap');
 
@@ -43,86 +44,96 @@
             left: 0;
             width: 100%;
         }
-        .landing-section{
+
+        .landing-section {
             position: relative;
-    height: 660px;
-    overflow: hidden;
+            height: 660px;
+            overflow: hidden;
         }
-        
-        .dark-color{
+
+        .dark-color {
             position: absolute;
             width: 100%;
             height: 100%;
             background-color: #00000099;
         }
+
         /* section start */
-        .vedio-container{
+        .vedio-container {
             position: absolute;
             display: grid;
-            grid-template-columns:48% 1fr;
+            grid-template-columns: 48% 1fr;
             margin-top: 40px;
             padding: 0 5%;
             grid-gap: 6%;
             top: 50%;
             transform: translateY(-50%);
         }
-.video-page{
-    display: grid;
-    place-items: center;
-}
-.video-page video{
-    width: 100%;
-}
-.page h2{
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-.page h1{
-    color: #FFF;
-    font-size: 55px;
-    font-weight: 800;
-}
-.page p{
-    margin: 5% 0;
-    color: #FFF;
-    line-height: 1.7;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    word-spacing: 0.9px;
-}
-.page-button{
-    margin: 5px;
-    padding: 9px 15px;
-    font-weight: 600;
-    border-radius: 10px;
-    background-color: #ed1575;
-    border: none;
-    color: white;
-}
-.page-button i, .page-button a{
-    color: #FFF;
-    font-size: 18px;
-}
-.page-button i{
-    margin-right: 6px;
-}
-.video-page video{
-    border: 10px solid #ed1575;
-    display: block;
-    /* display: grid; */
-    /* place-items: center; */
-    /* hell i am doing */
-}
 
-        
+        .video-page {
+            display: grid;
+            place-items: center;
+        }
+
+        .video-page video {
+            width: 100%;
+        }
+
+        .page h2 {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .page h1 {
+            color: #FFF;
+            font-size: 55px;
+            font-weight: 800;
+        }
+
+        .page p {
+            margin: 5% 0;
+            color: #FFF;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            word-spacing: 0.9px;
+        }
+
+        .page-button {
+            margin: 5px;
+            padding: 9px 15px;
+            font-weight: 600;
+            border-radius: 10px;
+            background-color: #ed1575;
+            border: none;
+            color: white;
+        }
+
+        .page-button i,
+        .page-button a {
+            color: #FFF;
+            font-size: 18px;
+        }
+
+        .page-button i {
+            margin-right: 6px;
+        }
+
+        .video-page video {
+            border: 10px solid #ed1575;
+            display: block;
+            /* display: grid; */
+            /* place-items: center; */
+            /* hell i am doing */
+        }
     </style>
 </head>
 
 <body>
-     <header class="header shadow scroll" id="hed">
+    <header class="header shadow scroll" id="hed">
         <div class="logo"><img src="new-logo.png" alt="error" class="img"></div>
         <nav class="nav" id="navid">
             <ul>
@@ -133,35 +144,44 @@
                 <button class="button"> <i class="fa fa-phone"></i>CONNECT US </button>
             </ul>
         </nav>
-        <i class='bx bx-menu menu'></i>
+        <div class="menu"><i class='bx bx-menu '></i></div>
+        <div class="cancel"><i class='bx bx-x'></i></div>
     </header>
     <section class="landing-section">
-       
-     <video autoplay muted loop id="myVideo">
+
+        <video autoplay muted loop id="myVideo">
             <source src="banner-video.mp4" type="video/mp4">
         </video>
-       <div class="dark-color"></div>
-<div class="vedio-container">
-    <div class="page">
-       
-        <h2>Hire Coworker / Virtual Assistant</h2>
-         <h1>Life Is Better With
-        A Virtual Assistant</h1>
-        <p>A virtual assistant is an independent contractor that performs administrative support services for clients away from the client's office. Although virtual assistant frequently works from anywhere, they have remote access to the necessary planning resources.</p>
-        <!-- <div class=""> -->
-           <button class="request page-button"><a href="#" target="_blank" ><i class='bx bx-user'></i>REQUEST SERVICE</a></button>
-           <button class="call page-button"><a href="#" target="_blank" ><i class='bx bx-phone-call'></i>CALL US</a></button>
-        <!-- </div> -->
-    </div>
-    <div class="video-page">
-        <video autoplay muted controls loop id="vid2"><source src="landing-vid.mp4" type="video/mp4"></video>
-    </div>
-</div>
+        <div class="dark-color"></div>
+        <div class="vedio-container">
+        
+                <div class="page">
+
+                    <h2>Hire Coworker / Virtual Assistant</h2>
+                    <h1>Life Is Better With
+                        A Virtual Assistant</h1>
+                    <p>A virtual assistant is an independent contractor that performs administrative support services
+                        for clients away from the client's office. Although virtual assistant frequently works from
+                        anywhere, they have remote access to the necessary planning resources.</p>
+                    <!-- <div class=""> -->
+                    <button class="request page-button"><a href="#" target="_blank"><i class='bx bx-user'></i>REQUEST
+                            SERVICE</a></button>
+                    <button class="call page-button"><a href="#" target="_blank"><i class='bx bx-phone-call'></i>CALL
+                            US</a></button>
+                    <!-- </div> -->
+                </div>
+                <div class="video-page">
+                    <video autoplay muted controls loop id="vid2">
+                        <source src="landing-vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+        </div>
     </section>
-    
+
     <!-- main start -->
     <main>
-       
+
         <section class="section1">
             <div class="top">
                 <p>SERVICES</p>
@@ -533,38 +553,50 @@
         </div>
 
     </footer>
-    <script> 
-    window.addEventListener('scroll',function(){
-        let scroll =  document.getElementsByClassName("scroll")[0]
-        // let croll =  document.getElementsByClassName("scroll")[1]
-        if(window.pageYOffset > 0){
-           scroll.classList.add("sticky");
-        //    croll.classList.add("sticky");
-        }else{
-            scroll.classList.remove("sticky")
-            // croll.classList.remove("sticky")
-        }
-    });
-    // window.addEventListener('scroll',()=>{
-    //     let croll = document.getElementsByTagName("nav")[0]
-    //     if(window.pageYOffset > 0){
-    //         croll.classList.add("croll");
-    //     }else{
-    //         croll.classList.remove("croll")
-    //     }
-    // })
-//         window.onscroll = function() {scrollFunction()};
-//         function scrollFunction() {
-//   if ( document.documentElement.scrollIntoView > 50) {
-    
-//   }
-// }
-let a = document.getElementsByClassName("menu")[0]
-a.addEventListener("click", function(){
-   let b = document.getElementsByClassName("nav")[0]
-   b.classList.toggle("run")
-})
-   </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let scroll = document.getElementsByClassName("scroll")[0]
+            // let croll =  document.getElementsByClassName("scroll")[1]
+            if (window.pageYOffset > 0) {
+                scroll.classList.add("sticky");
+                //    croll.classList.add("sticky");
+            } else {
+                scroll.classList.remove("sticky")
+                // croll.classList.remove("sticky")
+            }
+        });
+        // window.addEventListener('scroll',()=>{
+        //     let croll = document.getElementsByTagName("nav")[0]
+        //     if(window.pageYOffset > 0){
+        //         croll.classList.add("croll");
+        //     }else{
+        //         croll.classList.remove("croll")
+        //     }
+        // })
+        //         window.onscroll = function() {scrollFunction()};
+        //         function scrollFunction() {
+        //   if ( document.documentElement.scrollIntoView > 50) {
+
+        //   }
+        // }
+        let a = document.getElementsByClassName("menu")[0]
+        a.addEventListener("click", function () {
+            a.classList.toggle("menu-hidden")
+            let b = document.getElementsByClassName("nav")[0]
+            b.classList.toggle("run")
+            let cancel = document.getElementsByClassName("cancel")[0]
+            cancel.classList.toggle("not")
+        })
+        document.getElementsByClassName("cancel")[0].addEventListener("click", function(){
+            let a = document.getElementsByClassName("menu")[0]
+            a.classList.toggle("menu-hidden")
+            let b = document.getElementsByClassName("nav")[0]
+            b.classList.toggle("run")
+            var cancel = document.getElementsByClassName("cancel")[0]
+            cancel.classList.toggle("not")
+        })
+        
+    </script>
 </body>
 
 </html>
