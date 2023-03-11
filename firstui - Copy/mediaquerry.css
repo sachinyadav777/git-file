@@ -1,3 +1,14 @@
+@media screen and (max-width:  960px) {
+    .page h1{
+        font-size: 35px;
+    }
+    .page h2{
+        font-size: 15px;
+    }
+    .vedio-container{
+        grid-template-columns: 45% 1fr;
+    }
+}
 @media screen and (max-width: 837px) {
     .section1-box{
         grid-template-columns: repeat(2,1fr);
@@ -40,7 +51,9 @@
     .second-box{
         grid-template-columns: repeat(2,1fr);
     }
-
+.vedio-container{
+    grid-template-columns: repeat(1,1fr);
+}
 }
 @media screen and (max-width: 620px) {
     .section1-box,.section-2-box{
@@ -64,5 +77,30 @@
     }
     .section3 .s4-box1 .s4 span{
         font-size: 35px;
+    }
+}
+@media screen and (max-width: 505px) {
+    .section2 button, .section1 button{
+        margin-top: 50px;
+    }
+    .section-2-box{
+        margin-bottom: 145px;
+    }
+    .section1-box{
+        margin-bottom: 125px;
+    }
+    .first-box{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .border{
+        border: none;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .landing-section > #myVideo{
+        height: 100%;
+        width: unset;
     }
 }

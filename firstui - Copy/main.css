@@ -33,16 +33,16 @@
     font-weight: 800;
 font-size: 1.5rem;
     color: #2b2350;
-}
-.h4{
     position: relative;
+    width: fit-content;
 }
-.h4 > span::after{
+.h4 > h4::after{
     position: absolute;
     content: '';
     height: 2px;
-    width: 84%;
-    bottom: 25px;
+    width: 24%;
+    right: 76%;
+    bottom: 0px;
     background-color: #ed1575;
 }
 .section-4-img{
@@ -87,7 +87,7 @@ transition: all 0.7s;
 margin-bottom: 8%;
 }
 .s2-inner:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .s2-inner > h2{
 font-size: 18px;
@@ -248,18 +248,20 @@ font-size: 50px;
     font-weight: 600;
 font-size: 17px;
 color: #ed1575;
+  position: relative;
+  width: fit-content;
 }
-.s3{
+/* .s3{
     font-size: 14px;
     color: #ed1575;
-    position: relative;
-}
-.s3::after{
+  
+} */
+.s3 p::after{
     content: '';
     top: 50%;
     position: absolute;
     width: 50px;
-    right: 55%;
+    right: -26%;
     height: 2.5px;
     background-color: #ed1575;
 }
