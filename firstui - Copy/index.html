@@ -129,6 +129,36 @@
             /* place-items: center; */
             /* hell i am doing */
         }
+        .btn{
+            display: none;
+            position: fixed;
+            bottom: 10%;
+            right: 2%;
+            background-color: #ed1575;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            transition: all 0.3s;
+            animation: anime 1s infinite alternate ;
+        }
+        @keyframes anime {
+            from{
+                transform: translateY(0%);
+            }
+            to{
+                transform: translateY(-50%)
+            }
+            
+        }
+        .btn:hover{
+            background-color: #0d0436;
+            box-shadow: rgb(0 0 0 / 20%) 0px 5px 10px 10px;
+        }
+        .up{
+            color: #FFF;
+            font-size: 25px;
+        }
+
     </style>
     <link href="mediaquerry.css" rel="stylesheet">
 </head>
@@ -554,6 +584,7 @@
         </div>
 
     </footer>
+    <button class="btn" title="go to top"><i class='bx bx-chevrons-up up'></i></button>
     <script>
         window.addEventListener('scroll', function () {
             let scroll = document.getElementsByClassName("scroll")[0]
@@ -566,20 +597,6 @@
                 // croll.classList.remove("sticky")
             }
         });
-        // window.addEventListener('scroll',()=>{
-        //     let croll = document.getElementsByTagName("nav")[0]
-        //     if(window.pageYOffset > 0){
-        //         croll.classList.add("croll");
-        //     }else{
-        //         croll.classList.remove("croll")
-        //     }
-        // })
-        //         window.onscroll = function() {scrollFunction()};
-        //         function scrollFunction() {
-        //   if ( document.documentElement.scrollIntoView > 50) {
-
-        //   }
-        // }
         let a = document.getElementsByClassName("menu")[0]
         a.addEventListener("click", function () {
             a.classList.toggle("menu-hidden")
@@ -595,6 +612,18 @@
             b.classList.toggle("run")
             var cancel = document.getElementsByClassName("cancel")[0]
             cancel.classList.toggle("not")
+        })
+        window.addEventListener("scroll", function(){
+            let a = document.getElementsByClassName("btn")[0]
+            if(window.pageYOffset > 200){
+                a.style.display = "block"
+            }else{
+                a.style.display = "none"
+            }
+        })
+        let x = document.getElementsByClassName("btn")[0]
+        x.addEventListener("click", function(){
+            document.documentElement.scrollTop = 0;
         })
         
     </script>
