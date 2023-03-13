@@ -209,4 +209,13 @@
     .form h2 {
         font-size: 20px;
     }
+   /* .page-btn{
+    display: flex;
+   } */
+.page p {
+    font-size: 15px;
+}
+.page-button a , .page-button i{
+    font-size: 13px;
+}
 }
