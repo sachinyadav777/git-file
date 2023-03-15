@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: gray;
+        }
+
+        .box,
+        .box1,
+        .box2 {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        .number {
+            font-size: 185px;
+        }
+
+        .mark {
+            font-size: 30px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 3% 10%;
+            margin: 10px;
+            cursor: pointer;
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="box">
+                <div class="number hr">00</div>
+                <div class="mark">hr</div>
+            </div>
+            <div class="box">
+                <div class="number min">00</div>
+                <div class="mark">Min</div>
+            </div>
+            <div class="box">
+                <div class="number sec">00</div>
+                <div class="mark">Sec</div>
+            </div>
+            <div class="box">
+                <div class="number milsec">00</div>
+            </div>
+        </div>
+        <div class="box2">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+<script>
+    let hr = 0;
+    let min = 0;
+    let sec = 0;
+    let count = 0;
+    let timer = false;
+
+    function start() {
+        timer = true;
+        stopwatch()
+
+    }
+    function stop() {
+        timer = false;
+    }
+    function reset() {
+        timer = false;
+        hr = 0;
+        min = 0;
+        sec = 0;
+        count = 0;
+        document.getElementsByClassName("hr")[0].innerHTML ="00" ;
+        document.getElementsByClassName("min")[0].innerHTML = "00";
+        document.getElementsByClassName("sec")[0].innerHTML = "00";
+        document.getElementsByClassName("milsec")[0].innerHTML = "00";
+
+    }
+    function stopwatch() {
+        if (timer == true) {
+            count = count + 1;
+            if (count == 100) {
+                sec = sec + 1
+                count = 0
+            }
+            if (sec == 60) {
+                min = min + 1
+                sec = 0
+            }
+            if (min == 60) {
+                hr = hr + 1
+                min = 0
+                sec = 0
+            }
+             let hrstring = hr
+             let minstring =min 
+             let secstring = sec
+             let milstring = milsec
+             if(sec < 10){
+                sec = "0" + secstring
+             }
+            document.getElementsByClassName("hr")[0].innerHTML = hr;
+            document.getElementsByClassName("min")[0].innerHTML = min;
+            document.getElementsByClassName("sec")[0].innerHTML = sec;
+            document.getElementsByClassName("milsec")[0].innerHTML = count;
+            setTimeout("stopwatch()", 10);
+        }
+    }
+
+
+</script>
+
+</html>
