@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const max = ()=> {
+        // console.log("hello sachin")
+        //        }
+
+        // const max = ()=> console.log("hello sachin");
+
+        // const max =  name => console.log("hello " + name);
+
+        // const max = (name, number) => console.log("hello " + name + 7);
+        //    max("sachin",7)
+        // const x = {
+        //     name: "sachin",
+        //     role: "js developer",
+        //     exp: 30,
+        //     show: function () {
+        //         let that = this
+        //         setTimeout(function () {
+        //             console.log(that.name)
+        //         },3000)
+
+        //     }
+        // }
+        // x.show()
+        const y = {
+            name: "sachin",
+            role: "js developer",
+            exp: 30,
+            show: function () {
+                setTimeout( ()=> {
+                    console.log(this.name)
+                },3000)
+
+            }
+        }
+        y.show()
+        console.log(y.role)
+    </script>
+</body>
+
+</html>

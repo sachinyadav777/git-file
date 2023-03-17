@@ -79,7 +79,7 @@
     let hr = 0;
     let min = 0;
     let sec = 0;
-    let count = 0;
+    let mil = 0;
     let timer = false;
 
     function start() {
@@ -95,8 +95,8 @@
         hr = 0;
         min = 0;
         sec = 0;
-        count = 0;
-        document.getElementsByClassName("hr")[0].innerHTML ="00" ;
+        mil = 0;
+        document.getElementsByClassName("hr")[0].innerHTML = "00";
         document.getElementsByClassName("min")[0].innerHTML = "00";
         document.getElementsByClassName("sec")[0].innerHTML = "00";
         document.getElementsByClassName("milsec")[0].innerHTML = "00";
@@ -104,10 +104,10 @@
     }
     function stopwatch() {
         if (timer == true) {
-            count = count + 1;
-            if (count == 100) {
+            mil = mil + 1;
+            if (mil == 100) {
                 sec = sec + 1
-                count = 0
+                mil = 0
             }
             if (sec == 60) {
                 min = min + 1
@@ -118,17 +118,26 @@
                 min = 0
                 sec = 0
             }
-             let hrstring = hr
-             let minstring =min 
-             let secstring = sec
-             let milstring = milsec
-             if(sec < 10){
-                sec = "0" + secstring
-             }
-            document.getElementsByClassName("hr")[0].innerHTML = hr;
-            document.getElementsByClassName("min")[0].innerHTML = min;
-            document.getElementsByClassName("sec")[0].innerHTML = sec;
-            document.getElementsByClassName("milsec")[0].innerHTML = count;
+            let hrstring = hr
+            let minstring = min
+            let secstring = sec
+            let milstring = mil
+            if (sec < 10) {
+                secstring = "0" + secstring
+            }
+            if (min < 10) {
+                minstring = "0" + minstring
+            }
+            if (hr < 10) {
+                hrstring = "0" + hrstring
+            }
+            if (mil < 10) {
+                milstring = "0" + milstring
+            }
+            document.getElementsByClassName("hr")[0].innerHTML = hrstring;
+            document.getElementsByClassName("min")[0].innerHTML = minstring;
+            document.getElementsByClassName("sec")[0].innerHTML = secstring;
+            document.getElementsByClassName("milsec")[0].innerHTML = milstring;
             setTimeout("stopwatch()", 10);
         }
     }
