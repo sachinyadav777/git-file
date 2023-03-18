@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        /* header starts............... */
+
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            padding: 2.2% 5%;
+            z-index: 777;
+
+        }
+        .logo{
+            height: 45px;
+        }
+        .nav a{
+            position: relative;
+            margin-right: 25px;
+            color: white;
+           font-weight: bold;
+           letter-spacing: 1.2px;
+           font-family: sans-serif;
+          
+        }
+        .nav a::after{
+            content: "";
+            width: 0%;
+            height: 3px;
+            position: absolute;
+            top: 115%;
+            left: 0px;
+            background-color: #f0a70b;
+             transition: all 0.4s;
+        }
+        .nav a:hover::after{
+            width: 100%;
+             
+        }
+        h3{
+            color: white;
+            margin-top: 10px;
+            font-weight: bold;
+           letter-spacing: 1.2px;
+           font-family: sans-serif
+        }
+
+        /* header end......... */
+
+        /* main start....... */
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns:4% repeat(4,1fr) 4%;
+            position: relative;
+        }
+        .box{
+    border-right: 1px solid #5252529c;
+            background-color: gray;
+            height: 100vh;
+        }
+        .inner{
+            position: relative;
+            top: 77%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            position: absolute;
+           top: 0%;
+           bottom: 0%;
+           left: 0%;
+           right: 0%;
+           display: grid;
+           place-items: center;
+            
+        }
+        h1{
+        font-size: 55px;
+        color: #f0a70b;
+        font-weight: bolder;
+        letter-spacing: 1.2px;
+        font-family: sans-serif
+        }
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <img class="logo" src="logo-white.png" alt="error">
+        <nav class="nav">
+            <ul class="flex">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WHAT WE DO</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#">EMPLOYEES LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<div class="container">
+    <div class="box"></div>
+    <div class="box">
+        <div class="image">
+            <h1>
+                Lorem ipsum dolor sit.
+            </h1>
+        </div>
+        <div class="inner">
+<img src="Infrastructure-icon.png" alt="error">
+            <h3>INFRANSTRUCTURE</h3>
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner">
+<img src="product-icon.png" alt="error">
+            <h3>PRODUCT</h3>
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner">
+<img src="team-icon.png" alt="error">
+            <h3>FORTIFICATION</h3>
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner">
+<img src="sustainability-icon.png" alt="error" width="64px" height="64px">
+            <h3>CONTACT US</h3>
+        </div>
+    </div>
+    <div class="box"></div>
+</div>
+    </main>
+</body>
+</html>
