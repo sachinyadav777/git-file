@@ -110,11 +110,30 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            visibility: hidden;
 
         }
-        #box1:hover .image{
+
+        .img1 {
             background-image: url("home-1.jpeg");
+            visibility: visible;
         }
+
+        .img2 {
+            background-image: url("home-2.jpeg");
+            visibility: visible;
+        }
+
+        .img3 {
+            background-image: url("home-3.jpeg");
+            visibility: visible;
+        }
+
+        .img4 {
+            background-image: url("home-4-01.jpeg");
+            visibility: visible;
+        }
+
 
         h1 {
             font-size: 55px;
@@ -123,26 +142,6 @@
             letter-spacing: 1.2px;
             font-family: sans-serif
         }
-        /* .full-img{
-            position: absolute;
-           top: 0%;
-           left: 0%;
-           bottom: 0%;
-           right: 0%;
-            z-index: -1;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        #box1:hover .full-img{
-            background-image: url("home-1.jpeg");
-            
-        } */
-        /* #home2{
-            background-image: url("home-2.jpeg");
-            display: none;
-        } */
-
     </style>
 </head>
 
@@ -162,8 +161,7 @@
         <div class="container">
             <div class="box"></div>
             <div class="box" id="box1">
-                <!-- <div class="full-img" id="home1"></div> -->
-                <div class="image">
+                <div class="image img1">
                     <h1>
                         Lorem ipsum dolor sit.
                     </h1>
@@ -174,42 +172,96 @@
                 </div>
             </div>
             <div class="box box2">
+                <div class="image">
+                    <h1>
+                        Products Designed for a Healthy You!
+                    </h1>
+                </div>
                 <div class="inner">
                     <img src="product-icon.png" alt="error">
                     <h3>PRODUCT</h3>
                 </div>
-               
+
             </div>
             <div class="box">
+                <div class="image">
+                    <h1>
+                        Let’s Fortify and Fight the Hidden Hunger
+                    </h1>
+                </div>
                 <div class="inner">
                     <img src="team-icon.png" alt="error">
                     <h3>FORTIFICATION</h3>
                 </div>
             </div>
             <div class="box">
+                <div class="image">
+                    <h1>
+                        We Are Here For You
+                    </h1>
+                </div>
                 <div class="inner">
                     <img src="sustainability-icon.png" alt="error" width="64px" height="64px">
                     <h3>CONTACT US</h3>
                 </div>
             </div>
             <div class="box"></div>
-            
-           
-          
+
         </div>
+
+
     </main>
-   
+
 </body>
 <script>
-    // var a = document.getElementById("box1")
-    // a.addEventListener("click", function(){
-    //     document.getElementById("home1").style.display = "block"
-    // })
-    // var a = document.getElementsByClassName("box")[2]
-    // a.addEventListener("mouseover", function(){
-    //     document.getElementById("home2").style.display = "block"
-    // } )
-    
+
+     let a = document.getElementsByClassName("box")[1]
+     let b = document.getElementsByClassName("box")[2]
+     let c = document.getElementsByClassName("box")[3]
+     let d = document.getElementsByClassName("box")[4]
+
+// image1()
+    //  a.addEventListener("mouseover", function() {
+    //       document.getElementsByClassName("image")[0].classList.add("img1")
+    //   })
+    //  a.addEventListener("mouseout", function(){
+    //     document.getElementsByClassName("image")[0].classList.remove("img1")
+    //  })
+     b.addEventListener("mouseover", function() {
+          document.getElementsByClassName("image")[1].classList.add("img2")
+      })
+      b.addEventListener("mouseout", function(){
+        document.getElementsByClassName("image")[1].classList.remove("img2")
+     })
+     c.addEventListener("mouseover", function() {
+          document.getElementsByClassName("image")[2].classList.add("img3")
+      })
+      c.addEventListener("mouseout", function(){
+        document.getElementsByClassName("image")[2].classList.remove("img3")
+     })
+     d.addEventListener("mouseover", function() {
+          document.getElementsByClassName("image")[3].classList.add("img4")
+      })
+      d.addEventListener("mouseout", function(){
+        document.getElementsByClassName("image")[3].classList.remove("img4")
+     })
+
+    //  b.addEventListener("mouseover", image2())
+    //  c.addEventListener("mouseover", image3())
+    //  d.addEventListener("mouseover", image4())
+
+      
+    //  a.addEventListener("mouseout", imageout1())
+    //  b.addEventListener("mouseout", imageout2())
+    //  c.addEventListener("mouseout", imageout3())
+    //  d.addEventListener("mouseout", imageout4())
+    //  function imageout1() {
+    //      document.getElementsByClassName("image")[0].classList.remove("img1")
+    //  }
+
+
+
+
 </script>
 
 </html>
