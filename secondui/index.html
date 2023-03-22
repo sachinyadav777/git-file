@@ -10,6 +10,7 @@
         * {
             margin: 0%;
             padding: 0%;
+            
             box-sizing: border-box;
             text-decoration: none;
             list-style: none;
@@ -81,7 +82,8 @@
             height: 100vh;
             display: grid;
             grid-template-columns: 4% repeat(4, 1fr) 4%;
-            position: relative;
+            position: relative; 
+            overflow: hidden;
         }
 
         .box {
@@ -100,40 +102,60 @@
 
         .image {
             position: absolute;
-            top: 0%;
-            bottom: 0%;
-            left: 0%;
-            right: 0%;
+            /* width: 100%;
+            height: 100%; */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: grid;
             place-items: center;
             z-index: -1;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+           
             visibility: hidden;
+           
 
         }
+        .fstimg{
+            background-image: url("home-1.jpeg");
+            visibility: visible;
+        }
+       
 
         .img1 {
             background-image: url("home-1.jpeg");
             visibility: visible;
+             animation: zoomout 1s;
         }
 
         .img2 {
             background-image: url("home-2.jpeg");
             visibility: visible;
+             animation: zoomout 1s;
         }
 
         .img3 {
             background-image: url("home-3.jpeg");
             visibility: visible;
+             animation: zoomout 1s;
         }
 
         .img4 {
             background-image: url("home-4-01.jpeg");
             visibility: visible;
+             animation: zoomout 1s;
         }
-
+@keyframes zoomout{
+    from{
+        transform: scale(1.12);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 
         h1 {
             font-size: 55px;
@@ -161,7 +183,7 @@
         <div class="container">
             <div class="box"></div>
             <div class="box" id="box1">
-                <div class="image img1">
+                <div class="image img1 fstimg">
                     <h1>
                         Lorem ipsum dolor sit.
                     </h1>
@@ -220,31 +242,31 @@
      let c = document.getElementsByClassName("box")[3]
      let d = document.getElementsByClassName("box")[4]
 
-// image1()
-    //  a.addEventListener("mouseover", function() {
-    //       document.getElementsByClassName("image")[0].classList.add("img1")
-    //   })
-    //  a.addEventListener("mouseout", function(){
-    //     document.getElementsByClassName("image")[0].classList.remove("img1")
-    //  })
+
+      a.addEventListener("mouseover", function max() {
+           document.getElementsByClassName("image")[0].classList.add("img1")
+       })
+        a.addEventListener("mouseout", function(){
+           document.getElementsByClassName("image")[0].classList.remove("img1")
+        })
      b.addEventListener("mouseover", function() {
           document.getElementsByClassName("image")[1].classList.add("img2")
       })
-      b.addEventListener("mouseout", function(){
-        document.getElementsByClassName("image")[1].classList.remove("img2")
-     })
-     c.addEventListener("mouseover", function() {
-          document.getElementsByClassName("image")[2].classList.add("img3")
+       b.addEventListener("mouseout", function(){
+         document.getElementsByClassName("image")[1].classList.remove("img2")
       })
-      c.addEventListener("mouseout", function(){
-        document.getElementsByClassName("image")[2].classList.remove("img3")
-     })
+      c.addEventListener("mouseover", function() {
+           document.getElementsByClassName("image")[2].classList.add("img3")
+       })
+       c.addEventListener("mouseout", function(){
+         document.getElementsByClassName("image")[2].classList.remove("img3")
+      })
      d.addEventListener("mouseover", function() {
           document.getElementsByClassName("image")[3].classList.add("img4")
       })
-      d.addEventListener("mouseout", function(){
-        document.getElementsByClassName("image")[3].classList.remove("img4")
-     })
+       d.addEventListener("mouseout", function(){
+         document.getElementsByClassName("image")[3].classList.remove("img4")
+      })
 
     //  b.addEventListener("mouseover", image2())
     //  c.addEventListener("mouseover", image3())
