@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,85 @@
     <title>Document</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
-    .conatiner{
-        width: 30vw;
+
+    .container,
+    .container-inner {
+        white-space: nowrap;
+
     }
-    a{
-       position: relative;
-       margin-right: 20px;
-       cursor: pointer;
+
+    .box {
+        width: 400px;
+        height: 400px;
+
     }
-    a::after{
-        content: '';
-        position: absolute;
-        top: 106%;
-        /* left: -1%; */
-        right: 0;
-        height: 3px;
-        width: 0%;
-        background: yellow;
-       transition: 0.8s;
+
+    .box1 {
+        background-color: gray;
     }
-    a:hover::after{
-        width: 100%;
+
+    .box2 {
+        background-color: aqua;
+    }
+
+    .box3 {
+        background-color: red;
+    }
+
+    .box4 {
+        background-color: green;
+    }
+
+    .box5 {
+        background-color: yellow;
+    }
+
+    .box6 {
+        background-color: blue;
     }
 </style>
+
 <body>
-<div class="container">
-    <ul>
-        <li><a>my name is sachin</a></li>
-        <li><a>my name is sachin</a></li>
-        <li><a>my name is sachin</a></li>
-    </ul>
-    
-  
-</div>
+    <div class="container">
+        <div class="container-inner">
+            <div class="box box1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+            <div class="box box2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+            <div class="box box3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+            <div class="box box4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+            <div class="box box5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+            <div class="box box6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci odio cupiditate, nostrum
+                    numquam reiciendis recusandae architecto perferendis culpa, rem quibusdam quo iste esse illo sint
+                    temporibus. Dolorum, dicta quas!</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
