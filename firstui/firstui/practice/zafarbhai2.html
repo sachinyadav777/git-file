@@ -50,7 +50,7 @@
             gap: 2%;
         }
 
-      
+
 
         .card-container {
             display: grid;
@@ -100,7 +100,7 @@
 
         .bx {
             font-size: 20px;
-            
+
         }
 
         .icon,
@@ -112,19 +112,47 @@
             text-align: center;
         }
 
+
         .bottom .span {
             /* background-color: orangered; */
-            /* background: linear-gradient(90deg,#fb3d37 24%,#ff7751 47%,#ff7751 53%,#fb3d37 76%); */
-            background: linear-gradient(135deg, #0eeb0e, #5353f5, red);
+
+            /* background: linear-gradient(135deg, #5353f5, red); */
+            position: relative;
             padding: 10px 40px;
             font-size: 18px;
             display: inline-block;
-            animation: max 1.5s linear infinite;
+            opacity: 1;
+            background: linear-gradient(90deg,#fb3d37 24%,#ff7751 47%,#ff7751 53%,#fb3d37 76%);
+             animation: max 1.5s linear infinite;
+             background-size: 200% 100%;
         }
+         /* .bottom .span::after{
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+           z-index: -1;
+            /* background: linear-gradient(135deg,green, red);
+              background: linear-gradient(90deg,#fb3d37 24%,#ff7751 47%,#ff7751 53%,#fb3d37 76%);
+             animation: max 1.5s linear infinite;
+             background-size: 200% 100%; 
+            
+        }  */
+a{
+    color: #fff;
+    z-index: 1;
+    
+}
 
         @keyframes max {
+            0%{
+                background-position: 200% 0;
+            }
             100% {
-                filter: hue-rotate(360deg);
+                
+                background-position: 0 0;
             }
         }
 
@@ -170,7 +198,7 @@
             border-color: #4750ff;
             background: #f5f5ff;
             color: #0eeb0e;
-           
+
         }
         .click2{
             background: #fff;
@@ -179,7 +207,7 @@
              /* color: #0eeb0e; */
         }
 
-       
+
     </style>
 </head>
 
@@ -294,7 +322,9 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="bot span"><a href="#">NO-COST BOOKING</a></div>
+                    <div class="bot span">
+                        <a href="#">NO-COST BOOKING</a>
+                </div>
                     <div>
                         <div class="bot">… or book via:</div>
                         <div class="number bot"><i class='bx bxs-phone'></i>(864)546-5038</div>
@@ -407,9 +437,9 @@
                     benifitbox[j].classList.remove("click3")
                 }
             }
-        }) 
+        })
         }
-       
+
     </script>
 </body>
 
