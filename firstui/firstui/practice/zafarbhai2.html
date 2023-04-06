@@ -16,7 +16,6 @@
             box-sizing: border-box;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: 600;
-            color: gray;
             list-style: none;
             outline: none;
             text-decoration: none;
@@ -40,6 +39,7 @@
         .main {
             display: grid;
             grid-template-columns: 60% auto;
+            color: gray;
 
         }
 
@@ -166,6 +166,24 @@
         button{
             padding: 2px 15px;
         }
+        .click {
+            border-color: #4750ff;
+            background: #f5f5ff;
+            color: #0eeb0e;
+           
+        }
+        .click .price .radio::after{
+            opacity: 1;
+            background-image: url("https://sgtautotransport.com/images/quote/radio-selected.svg");
+        }
+        .click2{
+            background: #fff;
+        }
+        .click3{
+             /* color: #0eeb0e; */
+        }
+
+       
     </style>
 </head>
 
@@ -377,6 +395,25 @@
         for(let z of a){
             z.style.color = "lightgray"
         }
+        let card = document.getElementsByClassName("card")
+        let icon = document.getElementsByClassName("icon")
+        let benifitbox = document.getElementsByClassName("benifit-box")
+        console.log(benifitbox)
+        for(let i = 0;i<card.length;i++){
+            card[i].addEventListener("click", function(){
+            card[i].classList.toggle("click")
+            icon[i].classList.toggle("click2")
+            benifitbox[i].classList.toggle("click3")
+            for(let j = 0;j<card.length;j++){
+                if(j != i){
+                    card[j].classList.remove("click")
+                    icon[j].classList.remove("click2")
+                    benifitbox[j].classList.remove("click3")
+                }
+            }
+        }) 
+        }
+       
     </script>
 </body>
 
