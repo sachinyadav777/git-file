@@ -122,11 +122,12 @@
             font-size: 18px;
             display: inline-block;
             opacity: 1;
-            background: linear-gradient(90deg,#fb3d37 24%,#ff7751 47%,#ff7751 53%,#fb3d37 76%);
-             animation: max 1.5s linear infinite;
-             background-size: 200% 100%;
+            background: linear-gradient(90deg, #fb3d37 24%, #ff7751 47%, #ff7751 53%, #fb3d37 76%);
+            animation: max 1.5s linear infinite;
+            background-size: 200% 100%;
         }
-         /* .bottom .span::after{
+
+        /* .bottom .span::after{
             content: "";
             position: absolute;
             top: 0%;
@@ -140,18 +141,19 @@
              background-size: 200% 100%; 
             
         }  */
-a{
-    color: #fff;
-    z-index: 1;
-    
-}
+        a {
+            color: #fff;
+            z-index: 1;
+
+        }
 
         @keyframes max {
-            0%{
+            0% {
                 background-position: 200% 0;
             }
+
             100% {
-                
+
                 background-position: 0 0;
             }
         }
@@ -176,38 +178,68 @@ a{
         .inner {
             margin-bottom: 6px;
         }
-        .botum1{
+
+        .botum1 {
             display: flex;
             justify-content: flex-end;
             font-size: 40px;
         }
-        .bottum2{
+
+        .bottum2 {
             font-size: 12px;
         }
-        .last{
+
+        .last {
             width: 202px;
         }
-        .pay{
+
+        .pay {
             margin-top: 16px;
-    font-size: 18px;
+            font-size: 18px;
         }
-        button{
+
+        button {
             padding: 2px 15px;
         }
+
         .click {
             border-color: #4750ff;
             background: #f5f5ff;
             color: #0eeb0e;
 
         }
-        .click2{
+
+        .click2 {
             background: #fff;
         }
-        .click3{
-             /* color: #0eeb0e; */
+
+        .div span {
+            position: relative;
+            background-color: #fb3d37;
+            visibility: hidden;
+           
+        }
+        .div:hover span{
+visibility: visible;
         }
 
-
+        .div span::after {
+            content: "my name is sachin yadav.";
+            position: absolute;
+            background-color: black;
+            color: white;
+            width: 14vw;
+            padding: 10px;
+            top: -12px;
+            left: 10px;
+        }
+        .div span::before{
+            content: "";
+            position: absolute;
+            border: 10px solid;
+            border-color: #0000 black #0000 #0000;
+            left: -11px;
+        }
     </style>
 </head>
 
@@ -239,7 +271,7 @@ a{
                         <div class="icon">
                             <div class="payment-mathod benifit">
                                 <div>PAYMENT MATHOD:</div>
-                                <div><i class='bx bxs-info-circle' title="hello"></i></div>
+                                <div class="div"><i class='bx bxs-info-circle title'></i><span class="span"></span></div>
                             </div>
                             <div class=""><img src="cash-icon.svg" alt="error"></div>
                             <div class="">CARD & CASH</div>
@@ -324,7 +356,7 @@ a{
                 <div class="bottom">
                     <div class="bot span">
                         <a href="#">NO-COST BOOKING</a>
-                </div>
+                    </div>
                     <div>
                         <div class="bot">… or book via:</div>
                         <div class="number bot"><i class='bx bxs-phone'></i>(864)546-5038</div>
@@ -418,28 +450,27 @@ a{
     <script>
         let a = document.getElementsByClassName("bxs-info-circle");
         console.log(a)
-        for(let z of a){
+        for (let z of a) {
             z.style.color = "lightgray"
         }
         let card = document.getElementsByClassName("card")
         let icon = document.getElementsByClassName("icon")
         let benifitbox = document.getElementsByClassName("benifit-box")
         console.log(benifitbox)
-        for(let i = 0;i<card.length;i++){
-            card[i].addEventListener("click", function(){
-            card[i].classList.toggle("click")
-            icon[i].classList.toggle("click2")
-            benifitbox[i].classList.toggle("click3")
-            for(let j = 0;j<card.length;j++){
-                if(j != i){
-                    card[j].classList.remove("click")
-                    icon[j].classList.remove("click2")
-                    benifitbox[j].classList.remove("click3")
+        for (let i = 0; i < card.length; i++) {
+            card[i].addEventListener("click", function () {
+                card[i].classList.toggle("click")
+                icon[i].classList.toggle("click2")
+                benifitbox[i].classList.toggle("click3")
+                for (let j = 0; j < card.length; j++) {
+                    if (j != i) {
+                        card[j].classList.remove("click")
+                        icon[j].classList.remove("click2")
+                        benifitbox[j].classList.remove("click3")
+                    }
                 }
-            }
-        })
+            })
         }
-
     </script>
 </body>
 
