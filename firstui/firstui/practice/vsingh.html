@@ -29,6 +29,7 @@
     .container-inner {
         display: inline-flex;
         transition: all 0.2s ease-in;
+        pointer-events: none;    
 
     }
 
@@ -147,31 +148,48 @@
 <script>
     let icon = document.getElementsByClassName("left")[0]
     let icon2 = document.getElementsByClassName("right")[0]
-    let cont = document.getElementsByClassName("container-inner")[0]
+    // let cont = document.getElementsByClassName("container-inner")[0]
+     let cont = document.querySelector(".container-inner")
     let a = 0
-    icon.addEventListener("click", function () {
-        if (a == 0) {
-            cont.style.translate = "0%"
-        }
-        else {
-            a = a += 10;
-            console.log(a)
-            // cont.style.transform = "translateX(10%)"
-            cont.style.translate = a + "%";
-        }
-    })
-    icon2.addEventListener("click", function () {
-        if (a == -80) {
-            cont.style.translate = "0%"
-            a = 0
-        }
-        else {
-            a = a - 10
-            console.log(a)
-            // cont.style.transform = "translateX(-10%)"
-            cont.style.translate = a + "%"
-        }
-    })
+    // icon.addEventListener("click", function () {
+    //     if (a == 0) {
+    //         cont.style.translate = "0%"
+    //     }
+    //     else {
+    //         a = a += 10;
+    //         console.log(a)
+    //         // cont.style.transform = "translateX(10%)"
+    //         cont.style.translate = a + "%";
+    //     }
+    // })
+    // icon2.addEventListener("click", function () {
+    //     if (a == -80) {
+    //         cont.style.translate = "0%"
+    //         a = 0
+    //     }
+    //     else {
+    //         a = a - 10
+    //         console.log(a)
+    //         // cont.style.transform = "translateX(-10%)"
+    //         cont.style.translate = a + "%"
+    //     }
+    // })
+    //   let b =0;
+    //   setInterval(() => {
+    //      if(b == -80){
+    //          b = 0;
+    //          cont.style.translate = b + "%"
+    //      }
+    //      else{
+    //         b = b -10;
+    //      cont.style.translate = b + "%" 
+    //      }
+    //   },2000);
+      const dragging = (e)=>{
+console.log(e.pageX)
+cont.scrollLeft = e.pageX;
+      }
+      cont.addEventListener("mousemove" ,dragging);
 </script>
 
 </html>
