@@ -99,6 +99,14 @@
             font-size: 20px;
             display: grid;
         }
+        span{
+            position: relative;
+        }
+        span::after{
+            content: "";
+            position: absolute;
+            border: 10px solid;
+        }
         
     </style>
 </head>
@@ -181,6 +189,7 @@
                     <div></div>
                     <div></div>
                 </div>
+                <span></span>
     </main>
 </body>
 

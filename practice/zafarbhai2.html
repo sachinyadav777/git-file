@@ -217,10 +217,11 @@
             position: relative;
             background-color: #fb3d37;
             visibility: hidden;
-           
+
         }
-        .div:hover span{
-visibility: visible;
+
+        .div:hover span {
+            visibility: visible;
         }
 
         .div span::after {
@@ -233,13 +234,27 @@ visibility: visible;
             top: -12px;
             left: 10px;
         }
-        .div span::before{
+
+        .div span::before {
             content: "";
             position: absolute;
             border: 10px solid;
             border-color: #0000 black #0000 #0000;
             left: -11px;
         }
+
+        .footer {
+            background-color: rgb(69, 69, 248);
+            display: flex;
+            font-size: 30px;
+            justify-content: center;
+            margin-top: 33px;
+            padding: 90px;
+        }
+
+        /* .footer-inner{
+            
+        } */
     </style>
 </head>
 
@@ -271,7 +286,8 @@ visibility: visible;
                         <div class="icon">
                             <div class="payment-mathod benifit">
                                 <div>PAYMENT MATHOD:</div>
-                                <div class="div"><i class='bx bxs-info-circle title'></i><span class="span"></span></div>
+                                <div class="div"><i class='bx bxs-info-circle title'></i><span class="span"></span>
+                                </div>
                             </div>
                             <div class=""><img src="cash-icon.svg" alt="error"></div>
                             <div class="">CARD & CASH</div>
@@ -447,6 +463,14 @@ visibility: visible;
 
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <!-- <div class="footer-inner"> -->
+            <div class="num">300</div>
+            <div>total satisfied custmers</div>
+            <!-- </div> -->
+        </div>
+    </footer>
     <script>
         let a = document.getElementsByClassName("bxs-info-circle");
         console.log(a)
@@ -471,6 +495,15 @@ visibility: visible;
                 }
             })
         }
+ function max(){
+     if(pageYOffset == 100){
+        let a = 300
+ document.getElementsByClassName("num")[0].innerHTML = a
+ a = a += 1;
+     }
+     setTimeout("max()", 10)
+ }
+
     </script>
 </body>
 
