@@ -38,4 +38,4 @@ const dragging = (e)=>{
     console.log(e)
     carousel.scrollLeft = e.pageX;
           }
-          carousel.addEventListener("click" ,dragging);
+          carousel.addEventListener("mousemove" ,dragging);

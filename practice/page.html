@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+        }
+        .box{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            place-items: center;
+            padding: 5%;
+        }
+        .box div p{
+            text-align: center;
+            border-top: 1.5px solid black;
+            line-height: 20px;
+            padding: 7px;
+            font-weight: 600;
+        }
+        .box div p span{
+            color: rgb(0, 195, 255);
+        }
+        .inner h2{
+            position: relative;
+        }
+        .inner h2::after{
+            content: '';
+    position: absolute;
+    top: 135%;
+    transform: translateY(-55%);
+    left: 90px;
+    width: 55px;
+    height: 4.5px;
+    background-color: rgb(218, 161, 6);
+        }
+        .box .inner{
+            margin: 10px 0px;
+           
+        }
+        .max{
+            text-align: center;
+            margin: 4px 0;
+        }
+        .box i{
+            color: #ffa500;
+            font-size: 25px;
+        }
+        @media screen and (max-width: 900px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+        @media screen and (max-width: 615px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            
+        }
+         .box3{
+            padding-top: 2px;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="inner">
+                <h2>Approximate Distance</h2>
+            </div>
+            <div class="inner">
+                <h1>1574 miles</h1>
+            </div>
+            <div class="inner">
+                <p>How far is it from texas to california?shipping distance is based on average of recent auto shipping quotes</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="inner">
+                <h2>Estimated Transit Time</h2>
+            </div>
+            <div class="inner">
+                <h1>5-7 days</h1>
+            </div>
+            <div class="inner">
+                <p>Estimates based on average miles from <span>Texas</span>to<span>California</span>from when your vehicle is picked uo.</p>
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="inner">
+                <h2>Satisfied Customers</h2>
+            </div>
+            <div class="max">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <h3>Excellent!</h3>
+            </div>
+            <div class="inner">
+                <p>Excellent job! From Taxes to California, the driver picked it up on time,delivered on time,and intact</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

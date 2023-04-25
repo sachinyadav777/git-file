@@ -1,0 +1,49 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    
+}
+
+ .container-inner{
+   overflow: hidden;
+   white-space: nowrap;
+   /* display: inline-flex; */
+   /* width: 200%; */
+}
+.box{
+    width: calc(100% / 3);
+    height: 400px;
+    display: inline-block;
+
+}
+.box1 {
+    background-color: gray;
+}
+
+.box2 {
+    background-color: aqua;
+}
+
+.box3 {
+    background-color: red;
+}
+
+.box4 {
+    background-color: green;
+}
+
+.box5 {
+    background-color: yellow;
+}
+
+.box6 {
+    background-color: blue;
+}
+
+.box7 {
+    background-color: black;
+}
