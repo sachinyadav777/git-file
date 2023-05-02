@@ -1,18 +1,32 @@
 let item = document.getElementsByClassName("container-inner")[0]
-let down = false
 item.addEventListener("mousemove", move)
 item.addEventListener("mousedown", dragdown)
 item.addEventListener("mouseup", dragup)
+let down = false
+let prevpage
+let prevscroll
 function move(e){
-    console.log(e.pageX) 
-     e.preventDefault();
-    if(!down) return;
-    item.scrollLeft = e.pageX;
-}
-function dragdown(){
+      e.preventDefault();
+       
+    if(!down){
+        return;
+    }
+    else{
+        // console.log(e.pageX) 
+        let position = e.pageX - prevpage
+        item.scrollLeft = prevscroll - position;
+    } 
+    
+} 
+function dragdown(e){
    down = true
+   prevpage = e.pageX
+   prevscroll = item.scrollLeft
 }
 function dragup(){
     down = false
+    console.log(prevpage)
+    console.log(prevscroll )
+
  }
 
