@@ -1,0 +1,144 @@
+ /* main start....... */
+ .container {
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 4% repeat(4, 1fr) 4%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .box {
+     position: relative;
+     border-right: 1px solid #5252529c;
+     height: 100vh;
+     cursor: pointer;
+ }
+
+ .inner {
+     position: relative;
+     top: 77%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     opacity: 0.4;
+ }
+ .box:hover .inner{
+    opacity: 1;
+ }
+
+ .image {
+     position: fixed;
+     /* width: 100%;
+    height: 100%; */
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: grid;
+     place-items: center;
+     z-index: -1;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     visibility: hidden;
+
+
+ }
+
+ .fstimg {
+     background-image: url("image/home-1.jpeg");
+     visibility: visible;
+ }
+
+
+ .img1 {
+     background-image: url("image/home-1.jpeg");
+     visibility: visible;
+     animation: zoomout 1s;
+ }
+
+ .img2 {
+     background-image: url("image/home-2.jpeg");
+     visibility: visible;
+     animation: zoomout 1s;
+ }
+
+ .img3 {
+     background-image: url("image/home-3.jpeg");
+     visibility: visible;
+     animation: zoomout 1s;
+ }
+
+ .img4 {
+     background-image: url("image/home-4-01.jpeg");
+     visibility: visible;
+     animation: zoomout 1s;
+ }
+
+ @keyframes zoomout {
+     from {
+         transform: scale(1.12);
+     }
+
+     to {
+         transform: scale(1);
+     }
+ }
+
+ h1 {
+     font-size: 55px;
+     color: #f0a70b;
+     font-weight: bolder;
+     letter-spacing: 1.2px;
+     font-family: sans-serif;
+     text-align: center;
+ }
+
+ /* .animation{
+    background-color: #000000e0;
+    animation: animation 2s ;
+}
+@keyframes animation{
+    from{
+    height: 100%;
+    }
+    to{
+    height: 0%;
+    }
+    } */
+ .div {
+     position: absolute;
+     width: 100%;
+     background-color: #000000e0;
+     bottom: 0;
+ } 
+ .anim0{
+    animation: animation 2s ;
+ }
+ .anim1{
+    animation: animation 1.7s ;
+ }
+ .anim2{
+    animation: animation 1.1s ;
+ }
+ .anim3{
+    animation: animation 1.2s ;
+ }
+ .anim4{
+    animation: animation 1.7s ;
+ }
+ .anim5{
+    animation: animation 2s ;
+ }
+
+ @keyframes animation {
+     from {
+         height: 100%;
+     }
+
+     to {
+         height: 0%;
+     }
+ }

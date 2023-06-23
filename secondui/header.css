@@ -1,0 +1,58 @@
+ /* header starts............... */
+
+ .flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2.2% 5%;
+    z-index: 777;
+
+}
+
+.logo {
+    height: 45px;
+}
+
+.nav a {
+    position: relative;
+    margin-right: 25px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+
+}
+
+.nav a::after,
+.inner h3::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    top: 115%;
+    left: 0px;
+    background-color: #f0a70b;
+    transition: all 0.4s;
+}
+
+.nav a:hover::after,
+.box:hover .inner h3:after {
+    width: 100%;
+
+}
+
+.inner h3 {
+    position: relative;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-family: sans-serif
+}
+
+/* header end......... */

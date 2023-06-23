@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Antonio', sans-serif;
+}
+.content-container{
+    width: 80%;
+    margin: 0 auto;
+    /* max-width: 1500px; */
+}
+.heading{
+    text-align: center;
+    padding: 44px 0;
+    position: relative;
+}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+h6{
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50px);
+    font-size: 100px;
+    z-index: 0;
+}
+.content-box{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+li{
+    border-bottom: 2px solid #ddd;
+    padding: 2% 0;
+}
+li >span{
+    float: left;
+    width: 72%;
+}
+h3{
+    color: #3fb9be;
+    padding: 10% 0;
+    font-size: 25px;
+}
+.button{
+    padding: 7% 16%;
+    display: inline-block;
+    background: #3fb9be;
+    margin-top: 9%;
+}
+a{
+color: #fff;
+}
+img{
+    width: 100%;
+}
+.content-box1{
+    padding: 3%;
+}
+.content-box2{
+    padding: 0 8%;
+}
+strong{
+    color: #3fb9be;
+}
+em{
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+
+/* ................................. */
+
+.content-box3{
+    display: grid;
+    grid-template-columns: 4% auto 4%;
+    /* max-width: 1500px; */
+}
+.inner-box3{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+    height: 130px;
+}
+.box{
+    display: inline-flex;
+    align-items: center;
+    width: calc(100% / 5);
+    height: 130px;
+    background: #dae1e5;
+    font-size: 25px;
+    border-right: 1.5px solid #00000012;
+    margin-top: 15px;
+}
+.button3{
+    background-color:  #3fb9be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.margin {
+    margin-top: 0;
+    position: relative;
+    top: -10px;
+    border-top: 5px solid #3fb9be;
+    background: #fff;
+}
+.span{
+    
+    margin: 0 10px;
+    opacity: 0.3;
+}
+.no-tranzition{
+scroll-behavior: auto;
+}
+
+/* media querry.......... */
+@media screen and (max-width: 600px) {
+    .box{
+        width: calc(100% / 4);
+    }
+}
+
+

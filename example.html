@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    
+      
+       
+       
+    </style>
+</head>
+
+<body>
+   <div id="lyrics-container"></div>
+     <audio id="audio-player" controls></audio>
+     <!-- <script src="script.js"></script> -->
+</body>
+<script>
+   const lyrics = [
+  "Line 1",
+  "Line 2",
+  "Line 3",
+  // Add more lines as needed
+];
+
+function displayLyrics(line) {
+  const lyricsContainer = document.getElementById("lyrics-container");
+  lyricsContainer.textContent = line;
+}
+
+const audioPlayer = document.getElementById("audio-player");
+audioPlayer.src = "1.mp3";
+
+audioPlayer.addEventListener("timeupdate", function() {
+  const currentTime = audioPlayer.currentTime;
+  const lineIndex = Math.floor(currentTime / 10); // Adjust as needed
+  
+  displayLyrics(lyrics[lineIndex]);
+});
+
+audioPlayer.play();
+
+</script>
+
+</html>

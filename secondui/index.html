@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
     <style>
         * {
             margin: 0%;
@@ -16,160 +18,12 @@
             list-style: none;
             scroll-behavior: smooth;
         }
-
-        /* header starts............... */
-
-        .flex {
-            display: flex;
-            align-items: center;
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            justify-content: space-between;
-            padding: 2.2% 5%;
-            z-index: 777;
-
-        }
-
-        .logo {
-            height: 45px;
-        }
-
-        .nav a {
-            position: relative;
-            margin-right: 25px;
-            color: white;
-            font-weight: bold;
-            letter-spacing: 1.2px;
-            font-family: sans-serif;
-
-        }
-
-        .nav a::after,
-        .inner h3::after {
-            content: "";
-            width: 0%;
-            height: 3px;
-            position: absolute;
-            top: 115%;
-            left: 0px;
-            background-color: #f0a70b;
-            transition: all 0.4s;
-        }
-
-        .nav a:hover::after,
-        .inner h3:hover:after {
-            width: 100%;
-
-        }
-
-        .inner h3 {
-            position: relative;
-            color: white;
-            margin-top: 10px;
-            font-weight: bold;
-            letter-spacing: 1.2px;
-            font-family: sans-serif
-        }
-
-        /* header end......... */
-
-        /* main start....... */
-        .container {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: 4% repeat(4, 1fr) 4%;
-            position: relative; 
-            overflow: hidden;
-        }
-
-        .box {
-            border-right: 1px solid #5252529c;
-            height: 100vh;
-        }
-
-        .inner {
-            position: relative;
-            top: 77%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .image {
-            position: absolute;
-            /* width: 100%;
-            height: 100%; */
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: grid;
-            place-items: center;
-            z-index: -1;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-           
-            visibility: hidden;
-           
-
-        }
-        .fstimg{
-            background-image: url("home-1.jpeg");
-            visibility: visible;
-        }
-       
-
-        .img1 {
-            background-image: url("home-1.jpeg");
-            visibility: visible;
-             animation: zoomout 1s;
-        }
-
-        .img2 {
-            background-image: url("home-2.jpeg");
-            visibility: visible;
-             animation: zoomout 1s;
-        }
-
-        .img3 {
-            background-image: url("home-3.jpeg");
-            visibility: visible;
-             animation: zoomout 1s;
-        }
-
-        .img4 {
-            background-image: url("home-4-01.jpeg");
-            visibility: visible;
-             animation: zoomout 1s;
-        }
-@keyframes zoomout{
-    from{
-        transform: scale(1.12);
-    }
-    to{
-        transform: scale(1);
-    }
-}
-
-        h1 {
-            font-size: 55px;
-            color: #f0a70b;
-            font-weight: bolder;
-            letter-spacing: 1.2px;
-            font-family: sans-serif
-        }
     </style>
 </head>
 
 <body>
     <header class="flex">
-        <img class="logo" src="logo-white.png" alt="error">
+        <img class="logo" src="image/logo-white.png" alt="error">
         <nav class="nav">
             <ul class="flex">
                 <li><a href="#">ABOUT</a></li>
@@ -180,93 +34,93 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="box"></div>
-            <div class="box" id="box1">
-                <div class="image img1 fstimg">
+        <div class="container"> 
+            <div class="box"><div class="div"></div></div>
+            <div class="box" id="box1"><div class="div"></div>
+                <div class="image  fstimg clear">
                     <h1>
                         Lorem ipsum dolor sit.
                     </h1>
                 </div>
                 <div class="inner">
-                    <img src="Infrastructure-icon.png" alt="error">
+                    <img src="image/Infrastructure-icon.png" alt="error">
                     <h3>INFRANSTRUCTURE</h3>
                 </div>
             </div>
-            <div class="box box2">
-                <div class="image">
+            <div class="box box2"><div class="div"></div>
+                <div class="image clear">
                     <h1>
                         Products Designed for a Healthy You!
                     </h1>
                 </div>
                 <div class="inner">
-                    <img src="product-icon.png" alt="error">
+                    <img src="image/product-icon.png" alt="error">
                     <h3>PRODUCT</h3>
                 </div>
 
             </div>
-            <div class="box">
-                <div class="image">
+            <div class="box"><div class="div"></div>
+                <div class="image clear">
                     <h1>
                         Let’s Fortify and Fight the Hidden Hunger
                     </h1>
                 </div>
                 <div class="inner">
-                    <img src="team-icon.png" alt="error">
+                    <img src="image/team-icon.png" alt="error">
                     <h3>FORTIFICATION</h3>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
+            <div class="box"><div class="div"></div>
+                <div class="image clear">
                     <h1>
                         We Are Here For You
                     </h1>
                 </div>
                 <div class="inner">
-                    <img src="sustainability-icon.png" alt="error" width="64px" height="64px">
+                    <img src="image/sustainability-icon.png" alt="error" width="64px" height="64px">
                     <h3>CONTACT US</h3>
                 </div>
             </div>
-            <div class="box"></div>
-
+            <div class="box"><div class="div"></div></div>
         </div>
 
 
     </main>
 
 </body>
+<script src="bd.js"></script>
 <script>
 
-     let a = document.getElementsByClassName("box")[1]
-     let b = document.getElementsByClassName("box")[2]
-     let c = document.getElementsByClassName("box")[3]
-     let d = document.getElementsByClassName("box")[4]
+    //  let a = document.getElementsByClassName("box")[1]
+    //  let b = document.getElementsByClassName("box")[2]
+    //  let c = document.getElementsByClassName("box")[3]
+    //  let d = document.getElementsByClassName("box")[4]
 
 
-      a.addEventListener("mouseover", function max() {
-           document.getElementsByClassName("image")[0].classList.add("img1")
-       })
-        a.addEventListener("mouseout", function(){
-           document.getElementsByClassName("image")[0].classList.remove("img1")
-        })
-     b.addEventListener("mouseover", function() {
-          document.getElementsByClassName("image")[1].classList.add("img2")
-      })
-       b.addEventListener("mouseout", function(){
-         document.getElementsByClassName("image")[1].classList.remove("img2")
-      })
-      c.addEventListener("mouseover", function() {
-           document.getElementsByClassName("image")[2].classList.add("img3")
-       })
-       c.addEventListener("mouseout", function(){
-         document.getElementsByClassName("image")[2].classList.remove("img3")
-      })
-     d.addEventListener("mouseover", function() {
-          document.getElementsByClassName("image")[3].classList.add("img4")
-      })
-       d.addEventListener("mouseout", function(){
-         document.getElementsByClassName("image")[3].classList.remove("img4")
-      })
+    //   a.addEventListener("mouseover", function max() {
+    //        document.getElementsByClassName("image")[0].classList.add("img1")
+    //    })
+    //     a.addEventListener("mouseout", function(){
+    //        document.getElementsByClassName("image")[0].classList.remove("img1")
+    //     })
+    //  b.addEventListener("mouseover", function() {
+    //       document.getElementsByClassName("image")[1].classList.add("img2")
+    //   })
+    //    b.addEventListener("mouseout", function(){
+    //      document.getElementsByClassName("image")[1].classList.remove("img2")
+    //   })
+    //   c.addEventListener("mouseover", function() {
+    //        document.getElementsByClassName("image")[2].classList.add("img3")
+    //    })
+    //    c.addEventListener("mouseout", function(){
+    //      document.getElementsByClassName("image")[2].classList.remove("img3")
+    //   })
+    //  d.addEventListener("mouseover", function() {
+    //       document.getElementsByClassName("image")[3].classList.add("img4")
+    //   })
+    //    d.addEventListener("mouseout", function(){
+    //      document.getElementsByClassName("image")[3].classList.remove("img4")
+    //   })
 
     //  b.addEventListener("mouseover", image2())
     //  c.addEventListener("mouseover", image3())
@@ -280,10 +134,6 @@
     //  function imageout1() {
     //      document.getElementsByClassName("image")[0].classList.remove("img1")
     //  }
-
-
-
-
 </script>
 
 </html>

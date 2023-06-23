@@ -7,16 +7,16 @@ let prevpage
 let prevscroll
 function move(e){
       e.preventDefault();
-       
     if(!down){
         return;
     }
     else{
-        // console.log(e.pageX) 
+          
         let position = e.pageX - prevpage
+        console.log(position)
         item.scrollLeft = prevscroll - position;
     } 
-    
+ 
 } 
 function dragdown(e){
    down = true
@@ -25,8 +25,9 @@ function dragdown(e){
 }
 function dragup(){
     down = false
-    console.log(prevpage)
+    // console.log(prevpage)
     console.log(prevscroll )
 
  }
+
 
