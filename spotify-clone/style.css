@@ -10,7 +10,13 @@
 }
 
 body {
+    height: 100%;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
 }
 
 nav {
@@ -40,13 +46,13 @@ li {
 }
 
 .container {
-    min-height: 79vh;
+    height: 80%;
     background-color: black;
     width: 80%;
     margin: 8px auto;
     display: flex;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 5px 80px 5px 80px;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,6 +67,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    bottom: 0;
 }
 
 #progresbar {
@@ -74,6 +81,8 @@ li {
     padding: 5px 0;
     color: wheat;
     cursor: pointer;
+    position: relative;
+    z-index: 100;
 }
 
 .inner-icon {

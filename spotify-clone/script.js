@@ -10,6 +10,7 @@ let songs = [
     { songName: "Kya-Yaad-Mujhe-Bhi-Karti-Hogi-Woh", filePath: "songs/6.mp3", coverPath: "covers/covers6.jpg" },
     { songName: "Jaadugar - Paradox", filePath: "songs/7.mp3", coverPath: "covers/covers7.jpg" },
     { songName: "Chehre - Mc Square", filePath: "songs/8.mp3", coverPath: "covers/covers8.jpg" }
+    
 ]
 songitem.forEach((element, value) => {
     element.querySelector("img").src = songs[value].coverPath;
